@@ -81,7 +81,7 @@ export const Login = () => {
              Sing Up
             </button>
              <Link to="/create" >
-             <button type="submit" >Sing Up</button></Link>
+             <button type="submit" className="btn-register">Ingresar</button></Link>
          </form>
          
      </div>
