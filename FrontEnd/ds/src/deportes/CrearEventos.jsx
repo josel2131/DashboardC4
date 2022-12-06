@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import styled from "styled-components";
 
 
-const URI = 'http://localhost:8001/usuarios/regevento'
+const URI = 'http://localhost:8000/usuarios/regevento'
 
 
 export const CompCrearEvento = () => {

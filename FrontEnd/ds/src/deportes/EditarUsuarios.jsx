@@ -2,8 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-const URI = 'http://localhost:8001/usuarios/shuser/'
-const URI2 = 'http://localhost:8001/usuarios/upuser/'
+const URI = 'http://localhost:8000/usuarios/shuser/'
+const URI2 = 'http://localhost:8000/usuarios/upuser/'
 
 export const CompEditUser = () => {
     const [nameuser, setTitle] = useState('')    
