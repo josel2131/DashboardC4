@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 //EndPoint para mostrar un evento especifico
-const URI = 'http://localhost:8001/usuarios/shevent/'
+const URI = 'http://localhost:8000/usuarios/shevent/'
 
 //EndPoint para editar un evento especifico
-const URI2 = 'http://localhost:8001/usuarios/upevent/'
+const URI2 = 'http://localhost:8000/usuarios/upevent/'
 
 export const CompEditEvento = () => {
     const [fecha, setFecha] = useState('')

@@ -7,7 +7,7 @@ import Table from 'react-bootstrap/Table'
 //Importamos la libreria del icono 
 import { FaTrashAlt, FaPencilAlt,FaFileSignature } from "react-icons/fa";
 
-const URI = 'http://localhost:8001/usuarios/shuser/'
+const URI = 'http://localhost:8000/usuarios/shuser/'
 
 
 //Nombre de variable 

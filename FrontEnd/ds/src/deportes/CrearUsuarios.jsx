@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 
 
 
-const URI = 'http://localhost:8001/usuarios/reguser'
+const URI = 'http://localhost:8000/usuarios/reguser'
 
 
 export const CompCreateUser = () => {
