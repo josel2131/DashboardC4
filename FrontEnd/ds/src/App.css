@@ -63,7 +63,7 @@
 .btn-register{
   width: 100%;
   padding: 15px;
-  background-color: #f15a3c;
+  background-color: #062af8;
   border: 0;
   box-sizing: border-box;
   cursor: pointer;
@@ -79,7 +79,7 @@
 }
 .btn-register:hover,.btn-register:active{
   color:#fff;
-  background-color: #f15a3c;
+  background-color: #062af8;
   border-color:#e2b674;
 }
 
@@ -92,7 +92,7 @@ section{
 }
 
 .navBg{
-background-color: #f85f06;
+background-color: #062af8;
 font-weight: lighter;
 font-size: large; 
 color: #ffff;
@@ -100,4 +100,4 @@ color: #ffff;
 
 }
 
-head { color: #FF0000; }
+head { color: #062af8; }

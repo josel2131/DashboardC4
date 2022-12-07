@@ -12,11 +12,11 @@ import {regusuario, showuser, showoneuser,upuser,deluser} from '../controllers/u
 import {regevento, sheventos, shevent, delevent,upevent} from '../controllers/ceventoscontrollers.js';
 import { Login } from '../controllers/logincontrollers.js';
 import {db} from '../mongodb.js';
-
- 
+import {requireToken} from '../midleware/auth.js'
 
 //import mongoose from 'mongoose';
 export const router= express.Router();
+
 
 //Con esta linea estamos llamando la constante router 
 //app.use(router);
@@ -36,7 +36,7 @@ router.get('/login',(req,res)=>{
 
 //Rutas para mis eventos deportivos 
 router.post('/regevento', regevento);
-router.get ('/sheventos',sheventos);
+router.get ('/sheventos', requireToken, sheventos);
 router.get('/shevent/:id', shevent);
 router.delete('/delevent/:id',delevent);
 router.put('/upevent/:id',upevent);

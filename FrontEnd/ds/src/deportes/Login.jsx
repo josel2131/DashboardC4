@@ -29,7 +29,7 @@ export const Login = () => {
                     
                 }
               };
-            const URI = 'http://localhost:8001/usuarios/login'
+            const URI = 'http://localhost:8000/usuarios/login'
         console.log("paso por aca")
         const resp = await axios.post(URI, body, axiosConfig );
         
