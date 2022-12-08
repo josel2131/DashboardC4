@@ -80,7 +80,7 @@
 .btn-register:hover,.btn-register:active{
   color:#fff;
   background-color: #062af8;
-  border-color:#e2b674;
+  border-color:#062af8;
 }
 
 section{
@@ -95,9 +95,9 @@ section{
 background-color: #062af8;
 font-weight: lighter;
 font-size: large; 
-color: #ffff;
+color: rgb(81, 112, 253);
 
 
 }
 
-head { color: #062af8; }
+head { color: #0f29bd; }
