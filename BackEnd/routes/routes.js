@@ -36,7 +36,7 @@ router.get('/login',(req,res)=>{
 
 //Rutas para mis eventos deportivos 
 router.post('/regevento', regevento);
-router.get ('/sheventos', requireToken, sheventos);
+router.get ('/sheventos', sheventos);
 router.get('/shevent/:id', shevent);
 router.delete('/delevent/:id',delevent);
 router.put('/upevent/:id',upevent);
