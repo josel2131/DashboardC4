@@ -4,12 +4,13 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {Link, Outlet} from 'react-router-dom';
 
+
 export const NavbarComp = () => {
 
 return (
   
  <>  
-  <Navbar className='navBg' expand="lg" bg="light" variant="light">
+  <Navbar className="navBg" expand="lg" variant="dark" >
       <Container>
         <Navbar.Brand as={Link} to={'/'} >DashBoardSport</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

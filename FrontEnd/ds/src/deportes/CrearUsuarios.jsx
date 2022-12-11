@@ -1,11 +1,11 @@
 import axios from 'axios'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-//import Swal from 'sweetalert2'
+import Swal from 'sweetalert2'
 
 
 
-const URI = 'http://localhost:8000/usuarios/reguser'
+const URI = 'http://localhost:8001/usuarios/reguser'
 
 
 export const CompCreateUser = () => {
@@ -16,8 +16,11 @@ export const CompCreateUser = () => {
     
     //procedimiento guardar
     const store = async (e) => {
-        /*Swal.fire({
-            title: 'Usted desea guardar los cambios?',
+
+      e.preventDefault()
+      //Alertas 
+        Swal.fire({
+            title: 'Desea guardar los cambios?',
             showDenyButton: true,
             showCancelButton: true,
             confirmButtonText: 'Guardar',
@@ -26,11 +29,11 @@ export const CompCreateUser = () => {
             if (result.isConfirmed) {
               Swal.fire('Guardado!', '', '')
             } else if (result.isDenied) {
-              Swal.fire('Changes are not saved', '', 'info')
+              Swal.fire('CLos cambios no fueron guardados', '', 'info')
             }
-          })*/
+          })
 
-        e.preventDefault()
+        
         await axios.post(URI, {correo:correo, nameuser: nameuser, password: password})
         navigate('/users')
     }   
